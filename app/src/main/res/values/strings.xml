@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name">SporTeam</string>
+    <string name="slogan">Together is always better!</string>
+    <string name="signUp">Sign Up</string>
+    <string name="signIn">Sign In</string>
+    <string name="hintPhone">Phone Number"</string>
+    <string name="hintPass">Password</string>
+    <string name="hintName">Name</string>
+    <string name="hintDate">Date Of Birth</string>
+    <string-array name="gender">Gender
+        <item>
+        Female
+    </item>
+        <item>
+        Male
+     </item>
+    </string-array>
+    ---------------Sign In/ Sign Up----------------------------
+    <string name="textForProgressBar">Please wait...</string>
+    <string name="wrongPass">Wrong Password !!!</string>
+    <string name="signInSucceed">Sign in successfully !</string>
+    <string name="userNotExist">User not exist !!!</string>
+    <string name="error_empty">Field can\'t be empty</string>
+    <string name="maxPassError">Password max characters is 11!</string>
+    <string name="phone_exist_in_database">Phone already register</string>
+    <string name="phone_must_be_10digits">Phone Number must include 10 digits</string>
+    <string name="date_error">Must pick or enter date</string>
+    <string name="phone_number_format">Phone Number must start with \'05\'</string>
+    <string name="phone_must_include_only_digits">Phone Number must include only 10 digits</string>
+    <string name="date_format_error">Date format is \'\dd/mm/yyyy\'\</string>
+    <string name="register_successfully_1">You have successfully registered to SporTeam!</string>
+    <string name="register_successfully_2">We hope you get the best out of our app,</string>
+    <string name="register_successfully_3">Wishing you lots of fun sports moments with special people.</string>
+    <string name="first_experience">Let\'s Start Now!</string>
+    <string name="later">Maybe Later</string>
+    <string name="whiteSpacesErr">Password can\'t includ white spaces</string>
+    <string name="illegalAge">The App is Only for 16+</string>
+
+    /----------main - firstPage with video background---
+    <string name="resources">android.resource://</string>
+    <string name="video">video</string>
+    <string name="setOnErrorListener">setOnErrorListener</string>
+
+    /-------------menu---------------------------------
+    <string name="home">Home</string>
+    <string name="EditProfile">Edit Profile</string>
+    <string name="Definitions">Definitions</string>
+    <string name="FutureGames">Future Games</string>
+    <string name="GameHistory">Game History</string>
+    <string name="LogOut">Log Out</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="contactUs">Contact Us, Let Us Know!</string>
+    <string name="Contact">Contact:+9742300388,Israel</string>
+    <string name="logo">© SporTeam</string>
+
+    /-----------Home--------------------------------------
+    <string name="creationOfNewGame">Create New Game</string>
+    <string name="joinExistGame">Join Existing Games</string>
+    <string name="searchForPlayField">Search For Games Fields</string>
+    <string name="gameHistory">gameHistory</string>
+
+    /------------------titles for bar----------------------
+    <string name="createGame">Create New Game</string>
+    <string name="joinExistGameForBar">Join Existing Game</string>
+    <string name="searchField">Let\'s Search For Field</string>
+
+    /----------------fail to connect------------------------
+    <string name="fail">fail</string>
+    <string name="mustImplement"> must implement FragmentHomeContentListener</string>
+    <string name="mustImplementSuccess"> must implement FragmentSucceedListener</string>
+
+    /---------------Edit Profile----------------------------
+    <string name="gameCreated">Game Created:</string>
+    <string name="gamePlayed">Game Played:</string>
+    <string name="phone">Phone</string>
+    <string name="Update">Update!</string>
+    <string name="mustImplementEditProfile">must implement EditProfileListener</string>
+    <string name="phoneInvalid">Invalid Phone Number!</string>
+    /--------------Future Games------------------------------
+    <string name="tag">RecyclerView</string>
+    <string name="gamePlaned">gamePlanned</string>
+    <string name="participants">participants</string>
+    <string name="currentPlayers">currentPlayers</string>
+    <string name="test">test</string>
+
+    /--------------Field for Update--------------------------
+    <string name="gender">gender</string>
+    <string name="age">age</string>
+    <string name="name">name</string>
+    <string name="phoneForUpdate">phone</string>
+    <string name="url">url</string>
+    <string name="password">password</string>
+    <string name="date">date</string>
+
+    /-----------Permission-------------------------------------
+    <string name="Ok">Ok</string>
+    <string name="Cancel">Cancel</string>
+    <string name="permissionRequest">Permission Request</string>
+    <string name="explainUserWhyPermissionNeeded">SporTeam need Permission to access\n device location  to provide required services.\n Please allow permission </string>
+    <string name="allow">Grant Permission</string>
+    <string name="permissionDeny">Permission Denied</string>
+    <string name="permissionDeniedMessage">Permission to access device location is permanently denied. you need to go to setting to allow the permission</string>
+
+    /----------Map----------------------------------------------
+    <string name="searchPlace">Search a place</string>
+    <string name="findFields">Find Sports Fields</string>
+    <string name="locationNotFound">unable to get last location</string>
+    <string name="fetchTaskUnsuccessful">prediction fetching task unsuccessful</string>
+    <string name="placeNotFound">place not found: </string>
+    <string name="title_activity_maps">Map</string>
+    <string name="israel">il</string>
+    <string name="myTag">myTag</string>
+    <string name="StatusCode">StatusCode</string>
+
+    /-------Create Game-----------------------------------------
+    <string name="CreateButton">Create!</string>
+    <string name="TypeOfGame">Type Of Game:</string>
+    <string name="NameOfLocation">Location</string>
+    <string name="DateOfGame">"Date Of Game"</string>
+    <string name="createNewGame">Create New Game</string>
+    <string name="locationError">Location can\'t be empty!</string>
+    <string name="datePastError">You must put date that isn\'t past!</string>
+    <string name="yearError">You must put current year!</string>
+
+    /-------Join Existing Game-------------------------------------
+    <string name="gameCategory">Game Category</string>
+    <string name="locationGame">Game Location</string>
+    <string name="dateGame">Date Game</string>
+    <string name="players">Current players</string>
+    <string name="gamePlanned">"Date Game Planned: "</string>
+    <string name="playerfromMaxPlayers"> "Number Of Players: "</string>
+    <string name="GameIsFullErr"> "Game is Full!!"</string>
+    <string name="datePast">datePast</string>
+
+    /------Game Info For Player Before Join--------------------------
+    <string name="gameInfo">Game Information</string>
+    <string name="gameInfoTile">Game Information</string>
+    <string name="gameType">"Type: "</string>
+    <string name="locationOfGame">"Location: "</string>
+    <string name="DateOfGamePlanned">"Date: "</string>
+    <string name="createdBy">"Created By "</string>
+    <string name="howManyParticipantsAlreadyHave">"Joined: "</string>
+    <string name="Participants">"Participants:"</string>
+    <string name="joinBTN">Join!</string>
+    <string name="gameJoinErr">Can\'t Join Game!</string>
+    <string name="gameJoinSucceed">You Join The Game!</string>
+    <string name="alreadyRegisterGame">You Already Registered!</string>
+    <string name="userDeletedHimSelf">You can\'t join because you have deleted yourself!!</string>
+
+
+
+
+
+</resources>

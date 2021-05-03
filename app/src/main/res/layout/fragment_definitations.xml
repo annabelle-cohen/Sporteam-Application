@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@drawable/grad">
+
+     <RelativeLayout
+         android:layout_width="wrap_content"
+         android:layout_height="155dp"
+         android:layout_centerHorizontal="true"
+         >
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="@string/Definitions"
+             android:textSize="50sp"
+             android:textColor="@color/darkGray"
+             android:layout_centerInParent="true"
+             android:textStyle="bold"
+             android:fontFamily="@font/bubblegum_sans"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             >
+         </TextView>
+     </RelativeLayout>
+
+
+ </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="190dp">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone"
+            android:textColor="@color/darkGray"
+            android:inputType="phone"
+            android:textColorHint="@android:color/tertiary_text_light"
+            android:textSize="30sp"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintPass"
+                android:textColor="@color/darkGray"
+                android:inputType="text"
+                android:textColorHint="@android:color/tertiary_text_light"
+                android:textSize="30sp"
+                >
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/lightWhite"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/birthDateOfUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintDate"
+                android:textColorHint="@color/lightWhite"
+                android:textColor="@color/darkGray"
+                android:textSize="20sp"
+                android:inputType="date"
+                android:background="@drawable/edt_bg_selector"
+                ></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button_edit_def"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="430dp"
+        android:layout_marginLeft="290dp"
+        android:backgroundTint="@color/coloPrimary"
+        android:src="@drawable/ic_create_black_24dp">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <Button
+        android:id="@+id/update_user_definition"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginRight="140dp"
+        android:textColor="@color/lightWhite"
+        android:text="@string/Update"
+        android:background="@drawable/custom_btn_update"
+        android:visibility="gone"
+        ></Button>
+
+
+</RelativeLayout>

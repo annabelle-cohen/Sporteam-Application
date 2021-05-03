@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameInfoForPlayer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gameInfoTile"
+            android:textSize="30sp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:textStyle="bold"
+            android:textColor="@color/coloPrimary"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gameType"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:paddingTop="20dp"
+            android:textColor="@color/darkGray"
+            android:fontFamily="@font/handlee"
+            />
+
+        <TextView
+            android:id="@+id/gameLocationInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/locationGame"
+            android:textSize="20sp"
+            android:textColor="@color/darkGray"
+            android:fontFamily="@font/handlee"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/gameDateInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/DateOfGamePlanned"
+            android:textSize="20sp"
+            android:textColor="@color/darkGray"
+            android:fontFamily="@font/handlee"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/createdByInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/createdBy"
+            android:textSize="20sp"
+            android:textColor="@color/darkGray"
+            android:fontFamily="@font/handlee"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/alreadyJoinedInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/howManyParticipantsAlreadyHave"
+        android:textSize="20sp"
+        android:textColor="@color/darkGray"
+        android:fontFamily="@font/handlee"
+        android:gravity="center_horizontal"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/participantsInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Participants"
+                android:textSize="20sp"
+                android:textColor="@color/darkGray"
+                android:fontFamily="@font/handlee"
+                android:gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Join"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custom_btn_update"
+        android:textColor="@color/lightWhite"
+        android:text="@string/joinBTN"
+        android:textAllCaps="false">
+
+    </Button>
+
+</RelativeLayout>

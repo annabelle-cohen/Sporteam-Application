@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/park_game"
+    tools:context=".SignIn_Activity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="60dp"
+        android:fontFamily="@font/bubblegum_sans"
+        android:text="@string/app_name"
+        android:textColor="@color/lightWhite"
+        android:textSize="65sp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="90dp"
+        android:textStyle="bold"
+        android:text="@string/slogan"
+        android:fontFamily="@font/bubblegum_sans"
+        android:textColor="@color/lightWhite"
+        android:textSize="20sp"
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bubblegum_sans"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginRight="60dp"
+        android:textColor="@color/lightWhite"
+        android:textSize="30sp"
+        android:text="@string/signIn"
+       >
+    </TextView>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background='@drawable/background_for_signin'
+        >
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPhone"
+            android:hint="@string/hintPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/lightWhite"
+            android:textColor="@color/lightWhite"
+            android:textSize="28sp"
+            android:inputType="phone"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="10"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true">
+
+        </com.rengwuxian.materialedittext.MaterialEditText>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPassword"
+            android:hint="@string/hintPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/lightWhite"
+            android:textColor="@color/lightWhite"
+            android:textSize="28sp"
+            android:inputType="textPassword"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="11"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true">
+        </com.rengwuxian.materialedittext.MaterialEditText>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnSignIn2"
+        android:layout_height="wrap_content"
+        android:text="@string/signIn"
+       android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/darkGray"
+        android:background="@drawable/custom_btn_signin_second"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

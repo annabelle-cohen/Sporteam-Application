@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grad">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="155dp"
+                android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30sp"
+            android:text="@string/createNewGame"
+            android:layout_marginLeft="50sp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:fontFamily="@font/bubblegum_sans"
+            ></TextView>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="190dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name_of_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/NameOfLocation"
+                    android:textColor="@color/darkGray"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:textColorHint="@android:color/tertiary_text_light"
+                    android:textSize="20sp"
+                    >
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/DateOfGame">
+        </TextView>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/lightWhite"
+                app:errorEnabled="true">
+                <EditText
+                    android:id="@+id/date_of_game"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/DateOfGame"
+                    android:textColorHint="@color/lightWhite"
+                    android:textColor="@color/darkGray"
+                    android:textSize="20sp"
+                    android:inputType="date"
+                    android:background="@drawable/edt_bg_selector"
+                    ></EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TypeOfGame">
+                </TextView>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                android:id="@+id/gender_profile_editor"
+                >
+                <Spinner
+                    android:id="@+id/spinnerTypeGame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/darkGray"
+                    android:textColor="@color/darkGray"
+                    android:textSize="20sp"
+                    android:padding="20dp"
+                    android:saveEnabled="true"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_button_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="430dp"
+            android:layout_marginLeft="290dp"
+            android:backgroundTint="@color/coloPrimary"
+            android:src="@drawable/ic_add">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <Button
+            android:id="@+id/create_button"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="480dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginRight="140dp"
+            android:textColor="@color/lightWhite"
+            android:text="@string/CreateButton"
+            android:background="@drawable/custom_btn_update"
+            android:visibility="gone"
+            ></Button>
+    </RelativeLayout>
+

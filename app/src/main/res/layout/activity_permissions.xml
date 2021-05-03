@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Permissions"
+    android:padding="32dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+      >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="50dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:textStyle="bold"
+            android:textColor="@color/coloPrimary"
+            android:gravity="center_horizontal"
+            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/slogan"
+                android:textColor="@color/coloPrimary"
+                android:textSize="20dp"
+                android:fontFamily="@font/bubblegum_sans"
+                android:gravity="center_horizontal"
+                />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/permissionRequest"
+                    android:gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:paddingTop="20dp"
+                    android:textColor="@color/darkGray"
+                    android:fontFamily="@font/handlee"
+                    />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/explainUserWhyPermissionNeeded"
+            android:textSize="20dp"
+            android:paddingTop="20dp"
+            android:textColor="@color/darkGray"
+            android:fontFamily="@font/handlee"
+            android:gravity="center_horizontal"
+           />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_grant_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custom_btn_update"
+        android:textColor="@color/lightWhite"
+        android:text="@string/allow"
+        android:textAllCaps="false">
+
+    </Button>
+
+</RelativeLayout>

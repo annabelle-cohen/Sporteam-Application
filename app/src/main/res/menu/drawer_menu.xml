@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/Home" android:title="@string/home" android:icon="@drawable/ic_home_black_24dp"/>
+        <item android:id="@+id/EditProfile" android:title="@string/EditProfile" android:icon="@drawable/ic_create_black_24dp" />
+        <item android:id="@+id/Definitions" android:title="@string/Definitions" android:icon="@drawable/ic_settings_black_24dp"/>
+        <item android:id="@+id/FutureGames" android:title="@string/FutureGames" android:icon="@drawable/ic_schedule_black_24dp"/>
+        <item android:id="@+id/GameHistory" android:title="@string/GameHistory" android:icon="@drawable/ic_history_black_24dp"/>
+        <item android:id="@+id/LogOut" android:title="@string/LogOut" android:icon="@drawable/ic_logout_button_checked_black_24dp"/>
+    </group>
+
+    <item android:title="About">
+        <menu>
+            <item android:id="@+id/contact" android:title="@string/Contact" android:icon="@drawable/ic_phone_black_24dp"/>
+            <item android:id="@+id/nav_company_name" android:title="@string/logo"/>
+        </menu>
+    </item>
+</menu>

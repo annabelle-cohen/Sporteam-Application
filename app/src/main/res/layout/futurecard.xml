@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="7dp"
+    android:elevation="90dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10sp">
+            <TextView
+                android:id="@+id/categoryOfSportFragF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gameCategory"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                ></TextView>
+            <TextView
+                android:id="@+id/locationGameFragF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/locationGame"
+                android:textSize="15sp"
+                android:padding="5sp"
+                ></TextView>
+            <TextView
+                android:id="@+id/dateGameFragF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dateGame"
+                android:textSize="15sp"
+                android:padding="5sp"
+                ></TextView>
+            <TextView
+                android:id="@+id/playersFragF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/players"
+                android:textSize="15sp"
+                android:padding="5sp"
+                ></TextView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/delete_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75sp"
+        android:layout_marginLeft="270sp"
+        android:visibility="gone"
+        android:backgroundTint="@color/red_delete"
+        android:src="@drawable/ic_baseline_delete_24">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</androidx.cardview.widget.CardView>

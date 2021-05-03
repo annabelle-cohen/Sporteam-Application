@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Successfully_Registered">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/icon_check"
+        android:layout_marginLeft="140dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="140dp"
+        android:layout_marginTop="30dp">
+    </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:fontFamily="@font/handlee"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:text="@string/register_successfully_1"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:padding="5dp"
+            android:fontFamily="@font/handlee"
+            android:text="@string/register_successfully_2"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:padding="5dp"
+            android:fontFamily="@font/handlee"
+            android:text="@string/register_successfully_3"
+            android:textSize="14sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            >
+        <Button
+            android:id="@+id/start_now"
+            android:layout_height="40dp"
+            android:text="@string/first_experience"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="180dp"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_buttons_frag_succeed"
+            android:textColor="@color/darkGray"
+        />
+
+        <Button
+            android:id="@+id/start_later"
+            android:layout_height="40dp"
+            android:text="@string/later"
+            android:layout_marginBottom="10dp"
+            android:layout_width="180dp"
+            android:background="@drawable/custom_buttons_frag_succeed"
+            android:textColor="@color/darkGray"
+            android:layout_gravity="center"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

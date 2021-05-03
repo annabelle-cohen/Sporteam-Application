@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/grad">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="155dp"
+        android:layout_centerHorizontal="true"
+        >
+        <ImageView
+            android:id="@+id/profileImgEdit"
+            android:src="@drawable/ic_person_black_24dp"
+            android:background="@drawable/custom_img_profile"
+            android:layout_centerInParent="true"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:padding="3dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop">
+        </ImageView>
+    </RelativeLayout>
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="131dp">
+        <TextView
+            android:id="@+id/game_created"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="@string/gameCreated"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/darkGray"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/game_played"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="@string/gamePlayed"
+            android:textSize="20sp"
+            android:textColor="@color/darkGray"
+            android:layout_marginLeft="35dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="190dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name_profile_editor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintName"
+                android:textColor="@color/darkGray"
+                android:enabled="true"
+                android:inputType="text"
+                android:textColorHint="@android:color/tertiary_text_light"
+                android:textSize="20sp"
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone_profile_editor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone"
+                android:textColor="@color/darkGray"
+                android:enabled="true"
+                android:inputType="phone"
+                android:textColorHint="@android:color/tertiary_text_light"
+                android:textSize="20sp"
+                >
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:id="@+id/age_profile_editor"
+            >
+        <Spinner
+            android:id="@+id/spinnerAges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/darkGray"
+            android:textColor="@color/darkGray"
+            android:textSize="20sp"
+            android:padding="20dp"
+            android:saveEnabled="true"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:id="@+id/gender_profile_editor"
+            >
+            <Spinner
+                android:id="@+id/spinnerGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/darkGray"
+                android:textColor="@color/darkGray"
+                android:textSize="20sp"
+                android:padding="20dp"
+                android:saveEnabled="true"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/floating_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="430dp"
+    android:layout_marginLeft="290dp"
+    android:backgroundTint="@color/coloPrimary"
+    android:src="@drawable/ic_create_black_24dp">
+
+</com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <Button
+        android:id="@+id/update_user_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginRight="140dp"
+        android:textColor="@color/lightWhite"
+        android:text="@string/Update"
+        android:background="@drawable/custom_btn_update"
+        android:visibility="gone"
+></Button>
+</RelativeLayout>
